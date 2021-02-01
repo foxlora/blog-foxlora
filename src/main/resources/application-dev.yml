@@ -1,0 +1,26 @@
+spring:
+  thymeleaf:
+    mode: HTML
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://9.134.199.96:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+server:
+  port: 9999
+
+
+logging:
+  level:
+    root: info
+    com.foxlora: info
+  file:
+    name: log/blog-dev.log
